@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -111,4 +112,147 @@ body {
 .footer {
     grid-area: footer;
     background-color: lightskyblue;
+=======
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: aliceblue;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container */
+.container {
+    display: grid;
+    margin: 0px auto;
+    width: 80%;
+    grid-template-areas: 'header header header'
+    'content content content'
+    'content content content'
+    'footer footer footer';
+    row-gap: 10px;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+/* Header */
+.header {
+    display: grid;
+    grid-area: header;
+    grid-template-areas: 'judul judul judul'
+                        'cover cover cover'
+                        'menu menu menu';
+}
+
+.judul {
+    grid-area: judul;
+    background-color: #06c;
+    padding: 10px 15px;
+}
+
+.judul h1 {
+    color: white;
+}
+
+.cover {
+    grid-area: cover;
+    background-image: url(/img/ao.png);
+    min-height: 250px;
+    background-position: center;
+    background-size: cover;
+    border-top: 5px solid #09f;
+}
+/* Navigation */
+.menu {
+    grid-area: menu;
+}
+
+.menu ul {
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); */
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a {
+    display: block;
+    background-color: #06c;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.7em;
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    background-color: #09f;
+}
+
+/* Content */
+.content {
+    display: grid;
+    background-color: skyblue;
+    grid-area: content;
+    grid-template-areas: 'ads main sidebar'
+    'ads main sidebar'
+    'ads main sidebar';
+    grid-template-columns: 1fr 3.5fr 1.5fr;
+}
+
+/* Main */
+.main {
+    display: grid;
+    grid-area: main;
+    background-color: #06c;
+    padding: 10px;
+    grid-template-rows: 0.3fr 5fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.latest {
+    color: azure;
+    border:5px solid black;
+}
+
+.pagelist {
+    border: 5px solid black;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 200px;
+}
+
+.thumbnail {
+}
+
+.info {
+}
+
+/* Sidebar */
+.sidebar {
+    grid-area: sidebar;
+    background-color: #09f;
+}
+
+.ads {
+    grid-area: ads;
+    background-color: aquamarine;
+}
+
+/* Footer */
+
+.footer {
+    grid-area: footer;
+    background-color: lightskyblue;
+>>>>>>> d564b6ca3a187a21a1a31be50cfb1d5786a887ad
 }
